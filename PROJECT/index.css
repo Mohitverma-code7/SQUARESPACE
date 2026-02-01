@@ -1,0 +1,154 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html, body {
+  width: 100%;
+  height: 150%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-right: 60px;
+}
+header {
+    background-image: url(../Project/assets/IMG.webp);
+    background-repeat: no-repeat;  
+    background-position: 100vh;
+    width: 100vw;
+    height: 200vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.IMG {
+    width: 300px;
+    height: 50px;
+    display: block;
+    
+}
+
+.Peb {
+    display: flex;
+    gap: 30px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+}
+.EXTRA:hover {
+    cursor: pointer;
+}
+.Seb {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+button {
+    padding: 20px;
+    font-size: medium;
+    font-weight: 600;
+    border-radius: 6px;
+}
+button:hover {
+    background-color: rgb(193, 190, 190);
+    
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 4.5rem;
+  margin: 20px 0;
+}
+
+.hero-text p {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.hero-text button {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.main-text {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(36, 33, 33);
+    gap: 20px;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: small;
+    opacity: 1;
+}
+.main-text a {
+     padding: 20px;
+     border-radius: 50px;
+}
+
+.main-text a:hover {
+    background-color: rgb(59, 57, 57);
+}
+
+.main-video {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 20%);
+    border: 14px solid rgb(22, 22, 22);
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .Peb,   
+  .Seb {  
+    display: none;
+  }
+
+  nav {
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+  .IMG {
+    width: 200px; 
+    height: auto;
+  }
+}
+
+@media (max-width:768px) {
+    .main-text a {
+        font-size: smaller;
+        padding: 10px;
+    }
+    .main-text {
+        position: absolute;
+        top: 95%;
+    }
+    .hero-text h1 {
+        font-size: 3rem ;
+    }
+}
