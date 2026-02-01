@@ -17,7 +17,7 @@ nav {
     margin-right: 60px;
 }
 header {
-    background-image: url(../Project/assets/IMG.webp);
+    background-image: url(./assets/IMG.webp);
     background-repeat: no-repeat;  
     background-position: 100vh;
     width: 100vw;
