@@ -54,7 +54,6 @@ button {
     padding: 20px;
     font-size: medium;
     font-weight: 600;
-    border-radius: 6px;
 }
 button:hover {
     background-color: rgb(193, 190, 190);
@@ -68,11 +67,13 @@ button:hover {
   transform: translate(-50%, -50%);
   color: white;
   text-align: center;
+  line-height: 1.2;
 }
 
 .hero-text h1 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   margin: 20px 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .hero-text p {
@@ -81,12 +82,20 @@ button:hover {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.hero-text button {
-  padding: 15px 30px;
-  font-size: 16px;
-  font-weight: 600;
+.set-button {
+  padding: 12px 30px;
+  background: linear-gradient(to right, rgb(26, 23, 23) 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right center;
+  color: black;
   cursor: pointer;
-  margin-top: 20px;
+  transition: background-position 0.5s ease, color 0.5s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.set-button:hover {
+  background-position: left center;
+  color: white;
 }
 
 .main-text {
@@ -100,12 +109,12 @@ button:hover {
     background-color: rgb(36, 33, 33);
     gap: 20px;
     border-radius: 50px;
-    padding: 10px;
+    padding: 5px;
     font-size: small;
     opacity: 1;
 }
 .main-text a {
-     padding: 20px;
+     padding: 16px;
      border-radius: 50px;
 }
 
@@ -121,6 +130,108 @@ button:hover {
     border: 14px solid rgb(22, 22, 22);
     border-radius: 10px;
 }
+.section {
+    height: 80px;
+    background-color: white;
+}
+.section-text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size:xx-large;
+    padding: 20px;
+    margin: 20px;
+}
+.section-button {
+    background-color: white;
+    border-radius: 0;
+    border: 2px solid rgb(157, 155, 155);
+    margin-left: 4px;
+}
+.section-text-p {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1;
+}
+.section-text-span {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+}
+.section-image {
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   justify-content: center;
+   align-content:center ;
+   gap: 40px;
+   margin: 40px;
+  
+}
+.section-image-1 {
+    grid-column: span 6 / span 6;
+    width: 100%;
+    height: auto;
+    display: block;
+   
+}
+
+.text {
+    opacity: 0;
+    margin-top: 20px;
+}
+
+.img-box:hover .text {
+    opacity: 1;
+}
+
+.section-image-1:hover {
+    box-shadow: 8px 18px 20px  rgba(57, 56, 56, 0.7);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.section-image-2:hover {
+    box-shadow: 8px 18px 20px  rgba(57, 56, 56, 0.7);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+.section-image-2 {
+    grid-column: span 6 / span 6;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.view {
+    padding-left: 40px;   
+    padding-right: 40px;
+}
+.view-button {
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.view-button {
+  padding: 12px 30px;
+  border: 2px solid black;
+  background: linear-gradient(to right, black 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: right center;
+  color: black;
+  cursor: pointer;
+  transition: background-position 0.5s ease, color 0.5s ease;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.view-button:hover {
+  background-position: left center;
+  color: white;
+}
+
+
+
 
 @media (max-width: 768px) {
   .Peb,   
@@ -151,4 +262,27 @@ button:hover {
     .hero-text h1 {
         font-size: 3rem ;
     }
+    .section-text-p {
+        font-size: 1.4rem;
+    }
+    .section-button {
+        font-size: x-small;
+    }
+    .section-icon {
+        width: 10px;
+        height: 10px;
+        padding: 0;
+        margin: 0;
+   }
+   .section-text {
+    padding: 0;
+    margin-left: 10px;
+   }
+   .main-video {
+   width: 100%;  /* full screen height */
+   overflow: hidden;
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
 }
