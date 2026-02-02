@@ -134,6 +134,10 @@ button:hover {
     height: 80px;
     background-color: white;
 }
+.section1 {
+    height: 40px;
+    background-color: white;
+}
 .section-text {
     display: flex;
     justify-content: space-between;
@@ -229,6 +233,156 @@ button:hover {
   background-position: left center;
   color: white;
 }
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+}
+
+.foot p {
+    font-size: 40px;
+    font-family: 'Playfair Display', serif;
+}
+.Nazro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px;
+    gap: 20px;
+}
+.Nazro h1 {
+    font-size: larger;
+    margin-bottom: 4px;
+    
+}
+
+.log-text-p {
+    margin-top: 30px;
+}
+.flair {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px;
+    background-color: black;
+    color: white;
+
+}
+.asuu {
+    display: flex;
+    justify-content:flex-start;
+    align-items:start ;
+    
+}
+.asus-text {
+    font-size: larger;
+    line-height: 1.5;
+    padding: 10px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.time {
+    font-size: xx-large;
+    font-weight: 500;
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+.time-text {
+   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.help {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-content:center ;
+    background-color: black;
+    color: white;
+    gap: 10px;
+    padding: 40px;
+    
+}
+.main-help {
+    border: 2px solid gray;
+    padding: 20px;
+    width: fit-content;
+    width: 100%;
+    border-radius: 10px;
+}
+.main-help:hover {
+    border: 3px solid rgb(255, 255, 255);
+    .main-icon{
+        width: 34px;
+    }
+}
+.main-icon {
+    margin-top: 100px;
+    
+}
+
+.Peter {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    padding: 40px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 80px;
+}
+.tech {
+    font-size: xx-large;
+}
+.crop li {
+    list-style: none;
+}
+
+.hello {
+    font-size: medium;
+}
+.action ul {
+    font-size: small;
+    color: gray;
+    line-height: 1.6;
+}
+
+.grd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+.footnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.footnav ul li {
+    list-style: none;
+}
+.foot-ul {
+    display: flex;
+    gap: 10px;
+    color: gray;
+}
+hr {
+  border: none;
+  height: 1px;
+  background: #555;
+  
+}
+
 
 
 
